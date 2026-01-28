@@ -1,0 +1,263 @@
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    /* =====================
+    COLOR SYSTEM
+    ===================== */
+    :root {
+    --bg-main: #f1f5f9;
+    --bg-gradient: #eef2f7;
+    --card-bg: #f8fafc;
+
+    --border-soft: #dbe3ed;
+    --border-main: #38bdf8;
+
+    --text-main: #111827;
+    --text-muted: #6b7280;
+
+    --primary: #0ea5e9;
+    --primary-soft: #38bdf8;
+
+    --success: #22c55e;
+    --danger: #ef4444;
+    }
+
+    /* =====================
+    BODY
+    ===================== */
+    body {
+    background: linear-gradient(
+        180deg,
+        var(--bg-main),
+        var(--bg-gradient)
+    );
+    color: var(--text-main);
+    min-height: 100vh;
+    max-width: 92%;
+    margin-inline: auto;
+    }
+
+    /* =====================
+    CONTAINER
+    ===================== */
+    #container {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 18px;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 15px 35px rgba(15,23,42,0.08);
+    animation: fadeUp 0.5s ease-out;
+    }
+
+    /* =====================
+    TITLE
+    ===================== */
+    h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--primary);
+    }
+
+    /* =====================
+    INPUTS
+    ===================== */
+    .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 25px;
+    }
+
+    /* LABELS */
+    label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    }
+
+    /* INPUT FIELDS */
+    input {
+    background: #f1f5f9;
+    border: 1px solid var(--border-soft);
+    padding: 11px 12px;
+    border-radius: 10px;
+    color: var(--text-main);
+    width: 100%;
+    }
+
+    input::placeholder {
+    color: #94a3b8;
+    }
+
+    input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(14,165,233,0.18);
+    }
+
+    /* =====================
+    PRICE GROUP
+    ===================== */
+    .price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    background: #f1f5f9;
+    padding: 20px;
+    border: 1px solid var(--border-soft);
+    
+    }
+
+    .price .totals {
+        display: block;
+        width: 100%;
+        margin-top: -2rem;
+        text-align: start;
+    }
+
+    .price input {
+        margin: 0 10px;
+    width: 14%;
+    height: 42px;
+    padding: 8px;
+    }
+
+    /* TOTALS */
+    .price p {
+    margin-top: 12px;
+    font-weight: 600;
+    }
+
+    #priceforelement {
+    color: var(--success);
+    margin-left: 12px;
+    transition: 0.3s ease;
+    }
+
+    #priceforelement.update {
+    transform: scale(1.08);
+    }
+
+    #allelementprice {
+    color: var(--primary);
+    margin-left: 12px;
+    }
+
+    /* =====================
+    BUTTON
+    ===================== */
+    .buttons {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    }
+
+    button {
+    padding: 13px 34px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: white;
+    box-shadow: 0 6px 16px rgba(14,165,233,0.25);
+    transition: 0.3s ease;
+    }
+
+    button:hover {
+    transform: translateY(-2px);
+    }
+
+    /* =====================
+    SEARCH
+    ===================== */
+    #searchInput {
+    margin: 20px auto;
+    text-align: center;
+    }
+
+    /* =====================
+    TABLE
+    ===================== */
+    .datashow {
+    overflow-x: auto;
+    margin: 60px 20px;
+    }
+
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    }
+
+    thead {
+    background: #f1f5f9;
+    }
+
+    th {
+    padding: 14px;
+    color: var(--primary);
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 0.85rem;
+    }
+
+    td {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 0.85rem;
+    }
+
+    /* ACTION BUTTONS */
+    .update {
+    background: var(--success);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 8px;
+    }
+
+    .delete {
+    background: var(--danger);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 8px;
+    }
+
+    /* ROW HOVER */
+    tbody tr:hover {
+    background: #f8fafc;
+    }
+
+    /* =====================
+    RESPONSIVE
+    ===================== */
+    @media (max-width: 900px) {
+    .price {
+        flex-wrap: wrap;
+    }
+
+    .price input {
+        width: 48%;
+    }
+    }
+
+    /* =====================
+    ANIMATION
+    ===================== */
+    @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }

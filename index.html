@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Products Manager</title>
+</head>
+<body >
+    <main id="container">
+        <h1>Products Manager</h1>
+        
+        <!-- Inputs for product details -->
+        <div class="inputs">
+            <label for="titleinput">Title</label>
+            <input type="text" placeholder="title" id="titleinput" class="totalinputes">
+            <div class="price">
+                <div>
+                    <label for="priceinput">Orgine Price</label>
+                <input type="number" placeholder="price" id="priceinput" class="totalinputes">
+                <label for="taxesinput">Tax</label>
+                <input type="number" placeholder="taxe %" id="taxesinput" class="totalinputes">
+                <label for="adsinput">Ads</label>
+                <input type="number" placeholder="ads" id="adsinput" class="totalinputes">
+                <label for="discount">Discount</label>
+                <input type="number" placeholder="discount %" id="discountinput" class="totalinputes">
+                <label for="quantity">Quantity</label>
+                <input type="number" placeholder="quantity" id="quantityinput" class="totalinputes">
+                </div>
+                <!-- <label for="priceinput">Orgine Price</label>
+                <input type="number" placeholder="price" id="priceinput" class="totalinputes">
+                <label for="taxesinput">Tax</label>
+                <input type="number" placeholder="taxes" id="taxesinput" class="totalinputes">
+                <label for="adsinput">Ads</label>
+                <input type="number" placeholder="ads" id="adsinput" class="totalinputes">
+                <label for="discount">Discount</label>
+                <input type="number" placeholder="discount" id="discountinput" class="totalinputes">
+                <label for="quantity">Quantity</label>
+                <input type="number" placeholder="quantity" id="quantityinput" class="totalinputes"> -->
+                <br>
+                <div class="totals">
+                    <br>
+                    <p >total/piece:<span id="priceforelement" class="totalpriceinputes">0</span></p>
+                    <p >total:<span id="allelementprice" class="totalpriceinputes">0</span></p>
+                </div>
+            </div>
+            <label for="categoryinput">Category</label>
+            <input type="text" placeholder="category" id="categoryinput" class="totalinputes">
+        </div>
+
+        <!-- Buttons for actions -->
+        <div class="buttons">
+            <button id="submit">Add</button>
+        </div>
+
+        <!-- search bar -->
+        <!-- <label for="searchInput" style="display: flex; justify-content: center; font-size: 1.5rem; margin-top: 60px;">Search</label>
+        <input type="text" placeholder="Name/Category" id="searchInput"> -->
+
+        <!-- Table for displaying products -->
+        <!-- <div class="datashow">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total/p</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="parent">
+                    <!-- content will added here auto -->
+                
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- search bar -->
+        <label for="searchInput" style="display: flex; justify-content: center; font-size: 1.5rem; margin-top: 60px;">Search</label>
+        <input type="text" placeholder="Name / Category" id="searchInput">
+    <div class="datashow">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total/p</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="parent">
+                    <!-- content will added here auto -->
+                
+                    
+                </tbody>
+            </table>
+        </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
