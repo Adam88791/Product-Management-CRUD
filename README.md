@@ -31,7 +31,7 @@ You can add, update, delete, and search products while automatically calculating
 
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- JavaScript
 - Browser localStorage
 
 ## How to Run
