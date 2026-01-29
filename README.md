@@ -42,4 +42,4 @@ You can add, update, delete, and search products while automatically calculating
 git https://github.com/Adam88791Product-Management-CRUD.git
 
 ## Live Demo
-https://adam88791.github.io/Product-Management-CRUD/
+here https://697ac52dff9b4d902af26fdb--nimble-donut-dc54cf.netlify.app/
