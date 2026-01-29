@@ -330,6 +330,7 @@ addButton.addEventListener("click" , () => {
     
     if(addButton.innerHTML === "Add") {
         saveFucntion();
+        showToast("Operation done successfully", "success");
     } else {
         // Validate inputs before updating
         if (!validateInputs()) {
@@ -346,6 +347,10 @@ addButton.addEventListener("click" , () => {
     allTotalInputs.forEach(input => {
         input.value = "";
     })
+    document.querySelectorAll(".totalpriceinputes").forEach(span => {
+        span.textContent = 0;
+    })
+    showToast("Operation done successfully", "success");
 });
 
 
@@ -372,3 +377,18 @@ searchInput.addEventListener("input" , () => {
         createElement(productEle);
     });
 });
+
+
+
+// ####
+// small pop-up function
+function showToast(message, type = "success") {
+    const toast = document.getElementById("toast");
+
+    toast.textContent = message;
+    toast.className = `toast show ${type}`;
+
+    setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2500);
+}

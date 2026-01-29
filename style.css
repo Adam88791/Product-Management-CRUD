@@ -194,8 +194,11 @@
 
     table {
     width: 100%;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     text-align: center;
+    border: 1px solid #adadad;
+    border-radius: 8px;
+    padding: 20px;
     }
 
     thead {
@@ -261,3 +264,33 @@
         transform: translateY(0);
     }
     }
+
+
+    /* TOAST NOTIFICATION */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    min-width: 240px;
+    padding: 14px 18px;
+    background: #020617;
+    color: #e5e7eb;
+    border-left: 4px solid #38bdf8;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    font-size: 0.85rem;
+    font-weight: 500;
+    z-index: 1000;
+    transition: 0.4s ease;
+}
+
+/* visible */
+.toast.show {
+    right: 20px;
+}
+
+/* success */
+.toast.success {
+    border-color: #22c55e;
+}
+
