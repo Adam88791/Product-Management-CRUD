@@ -217,6 +217,10 @@ function createElement(product) {
     // update button functionality 
     updateButton.addEventListener("click" , () => {
         updateFunction(product);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     })
 
     // delete
